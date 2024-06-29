@@ -8,7 +8,7 @@ DELAYS = {
     'ERROR_PLAY': [60, 180],    # delay between errors in the game in seconds
 }
 # Use proxies or not
-PROXY = True
+PROXY = False
 
 # Play drop game
 PLAY_GAMES = True
