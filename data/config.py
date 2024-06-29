@@ -1,6 +1,6 @@
 # api id, hash
-API_ID = 1488
-API_HASH = '1488ugiukl'
+API_ID="29974238"
+API_HASH="26bc6eed922dccac2a0821766bd47f00"
 
 DELAYS = {
     'ACCOUNT': [5, 15],  # delay between connections to accounts (the more accounts, the longer the delay)
@@ -8,13 +8,13 @@ DELAYS = {
     'ERROR_PLAY': [60, 180],    # delay between errors in the game in seconds
 }
 # Use proxies or not
-PROXY = False
+PROXY = True
 
 # Play drop game
 PLAY_GAMES = True
 
 # points with each play game; max 280
-POINTS = [240, 280]
+POINTS = [200, 230]
 
 # title blacklist tasks (do not change)
 BLACKLIST_TASKS = ['Farm points']

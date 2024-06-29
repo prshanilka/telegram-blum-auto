@@ -1,5 +1,7 @@
-FORMAT WITH LOGIN PASS:
-login:pass@ip:port
-WITHOUT LOGIN PASS:
-:@ip:port
-PLEASE DELETE THIS LINES BEFORE PASTING YOUR PROXIES
+IMPORTANT TO WRITE 'TYPE' = http | socks4 | socks5
+BELOW IS FORMATTING (DELETE BEFORE PASTING PROXIES)
+type://user:pass@ip:port
+type://user:pass:ip:port
+type://ip:port:user:pass
+type://ip:port@user:pass
+type://ip:port

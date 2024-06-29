@@ -21,7 +21,7 @@ if not exist venv\Lib\site-packages\installed (
 )
 
 echo Starting the bot...
-python main.py
+python main.py -a
 
 echo done
 pause

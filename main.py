@@ -32,12 +32,14 @@ async def main():
             accounts = await Accounts().get_accounts()
 
             if config.PROXY is True:
-                proxys = get_all_lines("data/proxy.txt")
+                proxies = get_all_lines("data/proxy.txt")
             else:
-                proxys = ""
-
+                proxies = ""
+            for i in range(len(proxies)):
+                if proxies[i] == "http://0.0.0.0:0":
+                    proxies[i] = None
             tasks = []
-            for thread, (account, proxy) in enumerate(zip_longest(accounts, proxys)):
+            for thread, (account, proxy) in enumerate(zip_longest(accounts, proxies)):
                 if not account:
                     break
                 tasks.append(asyncio.create_task(start(account=account, thread=thread, proxy=proxy)))
